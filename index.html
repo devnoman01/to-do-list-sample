@@ -12,11 +12,28 @@
     >
 </head>
 <body>
-    <h1>To Do List</h1>
+    <h1 class="text-center my-5">To Do List</h1>
 
-    <div class="container w-75 m-auto text-auto">
-        
+    <div class="container w-50 m-auto text-auto">
+        <div class="input-group">
+            <input id="input-value" class="form-control"></input>
+            <button id="add-btn" class="btn btn-success">Add Items</button>
+        </div>
+        <div class="mt-5">
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">Number</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="content-container">
+                </tbody>
+            </table>
+        </div>
     </div>
+    
 
     <!-- bootstrap js -->
     <script 
